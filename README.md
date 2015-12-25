@@ -7,8 +7,8 @@ Vagrant designed to run through multiple platforms including currently Mac OS X,
 
 ## Installation Steps:
 
-- Install [Vagrant](https://www.vagrantup.com/downloads)
-- Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+- Install [Vagrant v1.8.1](https://www.vagrantup.com/downloads)
+- Install [VirtualBox v5.0.12](https://www.virtualbox.org/wiki/Downloads)
 - `$ vagrant plugin install vagrant-vbguest`
 - Clone this repository to your home directory
 - `$ cd centos`
