@@ -1,24 +1,36 @@
-# Provisioning Vagrant CentOS Hosts
+Setting Up Vagrant Environment For flask app:
+======
 
-## How to use:
+## Introduction:
 
-1. Install [Vagrant](https://www.vagrantup.com/downloads)
-2. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-3. `$ vagrant plugin install vagrant-vbguest`
-4. Clone this repository to your home directory
-5. `$ cd centos`
-6. `$ vagrant up`
-7. `$ vagrant ssh`
-8. `$ sudo yum groupinstall "Development Tools"`
-9. `$ sudo yum -y install kernel kernel-devel`
-10. `$ exit`
-11. `$ vagrant reload`
-12. Go to https://192.168.33.10 for webapp
+Vagrant designed to run through multiple platforms including currently Mac OS X, Microsoft Windows, Debian, Ubuntu, CentOS, RedHat and Fedora, in this document we will handle how to configure and run simple flask application virtual development environment through Vagrant from scratch to up and running.
 
-##Suspending and Shutting Down Virtual Machine:
+## Installation Steps:
 
-<p>After you finish your working, you need either to suspend and resume your virtual machine or turn it off; you can use one of the following commands upon your choice.</p>
+- Install [Vagrant](https://www.vagrantup.com/downloads)
+- Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+- `$ vagrant plugin install vagrant-vbguest`
+- Clone this repository to your home directory
+- `$ cd centos`
+- `$ vagrant up`
+- `$ vagrant ssh`
+- `$ sudo yum groupinstall "Development Tools"`
+- `$ sudo yum -y install kernel kernel-devel`
+- `$ exit`
+- `$ vagrant reload`
+- `$ vagrant ssh`
+- `$ cd /vagrant`
+- `$ sudo ./provisioning.sh`
+- Go to http://192.168.33.10/horizonreg/users/123 for flask application
 
-1. `$ vagrant suspend`
-2. `$ vagrant resume`
+## Shut Down The Virtual Machine:
+
+After you finish your work, you need to turn the virtual machine off.
+
+1. Exit the virtual machine terminal by typing `exit`
+2. `$ cd centos`
 3. `$ vagrant halt`
+
+## Virtual Machine sudo password:
+
+sudo password is `vagrant` in case you need to execute any commands the require sudo.

@@ -272,10 +272,9 @@
 	"buffers":
 	[
 		{
-			"file": "centos.sublime-project",
 			"settings":
 			{
-				"buffer_size": 45,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		}
@@ -531,7 +530,6 @@
 		"height": 114.0,
 		"where_history":
 		[
-			"",
 			"/home/hshahin/workspaces/OpenDSA",
 			"/home/hshahin/workspaces/OpenDSA/tools",
 			"/home/hshahin/workspaces/OpenDSA/Books/Everything",
@@ -619,13 +617,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"keystoneclient",
-			"usr/share",
-			"openstack_horizon_reg_service",
-			"/usr/share",
-			"reg_service",
-			"horizonreg",
-			"reg_service",
 			"#",
 			"\\n",
 			"APACHE_LOG_DIR",
@@ -746,7 +737,14 @@
 			"syncProficiency",
 			"lti.frameResize",
 			"thmregion",
-			"ssav"
+			"ssav",
+			"twoColorCON",
+			"ssav",
+			"thmregion",
+			"ssAV",
+			"ss",
+			"ssav",
+			"TwoColoringProofCON"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -776,11 +774,10 @@
 			[
 				{
 					"buffer": 0,
-					"file": "centos.sublime-project",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 45,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -793,9 +790,10 @@
 						],
 						"settings":
 						{
+							"default_dir": "/home/hshahin/workspaces/OpenDSA-DevStack",
 							"origPos": 0.0,
 							"syncScroll": false,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1408,7 +1406,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 360.0,
+	"side_bar_width": 243.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
