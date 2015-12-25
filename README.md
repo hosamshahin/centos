@@ -9,7 +9,11 @@
 5. `$ cd centos`
 6. `$ vagrant up`
 7. `$ vagrant ssh`
-8. Go to https://192.168.33.10 for webapp
+8. `$ sudo yum groupinstall "Development Tools"`
+9. `$ sudo yum -y install kernel kernel-devel`
+10. `$ exit`
+11. `$ vagrant reload`
+12. Go to https://192.168.33.10 for webapp
 
 ##Suspending and Shutting Down Virtual Machine:
 
