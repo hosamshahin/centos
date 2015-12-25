@@ -17,22 +17,22 @@ apt-get -y install build-essential
 apt-get -y update
 
 # Install apache and mode_wsgi
-apt-get install apache2
-apt-get install libapache2-mod-wsgi
+apt-get -y install apache2
+apt-get -y install libapache2-mod-wsgi
 
 # install virtualenv
 pip install virtualenv
 
 # Create Virtualenv
-cd /vagrant/centos/reg_service
+cd /vagrant/reg_service
 virtualenv venv
-source venv/bin/activate
+. venv/bin/activate
 pip install -r requirements.txt
 
 # Apache Settings
-cp /vagrant/centos/reg_service/apache/reg_service.conf /etc/apache2/conf-enabled/reg_service.conf
+cp /vagrant/reg_service/apache/reg_service.conf /etc/apache2/conf-enabled/reg_service.conf
 
-chmod -R 777 /vagrant/centos/reg_service/log/service.log
+chmod -R 777 /vagrant/reg_service/log/service.log
 
 # Restart apache
 service apache2 restart
