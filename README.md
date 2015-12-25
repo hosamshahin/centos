@@ -2,14 +2,14 @@
 
 ## How to use:
 
-1. `vagrant plugin install vagrant-vbguest`
 1. Install [Vagrant](https://www.vagrantup.com/downloads)
 2. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-3. Clone this repository to your home directory
-4. `$ cd centos`
-5. `$ vagrant up`
-6. `$ vagrant ssh`
-9. Go to https://192.168.33.10 for flaskapp
+3. `$ vagrant plugin install vagrant-vbguest`
+4. Clone this repository to your home directory
+5. `$ cd centos`
+6. `$ vagrant up`
+7. `$ vagrant ssh`
+8. Go to https://192.168.33.10 for webapp
 
 ##Suspending and Shutting Down Virtual Machine:
 
