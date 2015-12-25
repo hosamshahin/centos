@@ -14,22 +14,17 @@ Vagrant designed to run through multiple platforms including currently Mac OS X,
 - `$ cd centos`
 - `$ vagrant up`
 - `$ vagrant ssh`
-- `$ sudo yum groupinstall "Development Tools"`
-- `$ sudo yum -y install kernel kernel-devel`
-- `$ exit`
-- `$ vagrant reload`
-- `$ vagrant ssh`
-- `$ cd /vagrant`
-- `$ sudo ./provisioning.sh`
+- `$ cd /vagrant`vagrant up
+- `$ sudo ./vagrant/provision.sh`
 - Go to http://192.168.33.10/horizonreg/users/123 for flask application
 
 ## Shut Down The Virtual Machine:
 
 After you finish your work, you need to turn the virtual machine off.
 
-1. Exit the virtual machine terminal by typing `exit`
-2. `$ cd centos`
-3. `$ vagrant halt`
+- Exit the virtual machine terminal by typing `exit`
+- `$ cd centos`
+- `$ vagrant halt`
 
 ## Virtual Machine sudo password:
 
