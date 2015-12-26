@@ -12,7 +12,7 @@ sys.stdout = sys.stderr
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), '../..'))
 
 ##Add this file path to sys.path in order to import app
-sys.path.append('/vagrant/myflaskapp/myflaskapp/')
+sys.path.append('/vagrant/myflaskapp/')
 
 ##Create appilcation for our app
-from myflaskapp.app import create_app as application
+from myflaskapp.app import app as application

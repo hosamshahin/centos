@@ -15,6 +15,11 @@ def create_app(config_object=ProdConfig):
     """
     app = Flask(__name__)
     app.config.from_object(config_object)
+    logfile = app.config.get("LOGFILE")
+    logfile_size = app.config.get("LOGFILE_SIZE", 100000)
+    if not logfile:
+        logfile = os.path.join(os.path.dirname(os.path.realpath(__file__)))+'/log/service.log'
+
     register_extensions(app)
     register_blueprints(app)
     register_errorhandlers(app)
@@ -51,7 +56,4 @@ def register_errorhandlers(app):
         app.errorhandler(errcode)(render_error)
     return None
 
-
-
-if __name__ == '__main__':
-    app.run()
+app = create_app()

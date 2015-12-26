@@ -23,6 +23,7 @@ apt-get -y install libapache2-mod-wsgi
 
 # install virtualenv
 pip install virtualenv
+pip install virtualenv --upgrade
 
 # Create Virtualenv
 cd /vagrant/reg_service
@@ -44,21 +45,20 @@ cookiecutter https://github.com/sloria/cookiecutter-flask.git --no-input
 cd /vagrant/myflaskapp
 virtualenv venv
 . venv/bin/activate
-pip install -r requirements/dev.txt
+pip install -r requirements.txt
+
+# add the following to .bashrc file and reopen the shell
+# export MYFLASKAPP_ENV='prod' 
+# export MYFLASKAPP_SECRET='something-really-secret'
 python manage.py db init
 python manage.py db migrate
 python manage.py db upgrade
-# python manage.py server
 
 # Apache Settings
 cp /vagrant/myflaskapp_config/myflaskapp.conf /etc/apache2/conf-enabled/myflaskapp.conf
 
 # for myflask application
-mkdir log
-cd log
-touch service.log
-chmod -R 777 /vagrant/myflaskapp/log/service.log
-
+chmod -R 777 /vagrant/myflaskapp/myflaskapp/static/.webassets-cache
 
 # Restart apache
 service apache2 restart

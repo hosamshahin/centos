@@ -133,3 +133,57 @@ Traceback (most recent call last):
   File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/session.py", line 434, in _send_request
     raise exceptions.ConnectionRefused(msg)
 ConnectFailure: Unable to establish connection to http://127.0.0.1:35357/v3/users/123
+Unable to establish connection to http://127.0.0.1:35357/v3/users/123
+Traceback (most recent call last):
+  File "/vagrant/reg_service/wsgi/../../reg_service/keystone/views.py", line 72, in get
+    user = keystoneapi.get_user(user_id)
+  File "/vagrant/reg_service/wsgi/../../reg_service/keystone/keystoneapi.py", line 111, in get_user
+    user = keystone.users.get(id)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/v3/users.py", line 114, in get
+    user_id=base.getid(user))
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/base.py", line 75, in func
+    return f(*args, **new_kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/base.py", line 350, in get
+    self.key)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/base.py", line 147, in _get
+    resp, body = self.client.get(url, **kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/adapter.py", line 170, in get
+    return self.request(url, 'GET', **kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/adapter.py", line 206, in request
+    resp = super(LegacyJsonAdapter, self).request(*args, **kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/adapter.py", line 95, in request
+    return self.session.request(url, method, **kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/utils.py", line 337, in inner
+    return func(*args, **kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/session.py", line 390, in request
+    resp = send(**kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/session.py", line 434, in _send_request
+    raise exceptions.ConnectionRefused(msg)
+ConnectFailure: Unable to establish connection to http://127.0.0.1:35357/v3/users/123
+Unable to establish connection to http://127.0.0.1:35357/v3/users/123
+Traceback (most recent call last):
+  File "/vagrant/reg_service/wsgi/../../reg_service/keystone/views.py", line 72, in get
+    user = keystoneapi.get_user(user_id)
+  File "/vagrant/reg_service/wsgi/../../reg_service/keystone/keystoneapi.py", line 111, in get_user
+    user = keystone.users.get(id)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/v3/users.py", line 114, in get
+    user_id=base.getid(user))
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/base.py", line 75, in func
+    return f(*args, **new_kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/base.py", line 350, in get
+    self.key)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/base.py", line 147, in _get
+    resp, body = self.client.get(url, **kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/adapter.py", line 170, in get
+    return self.request(url, 'GET', **kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/adapter.py", line 206, in request
+    resp = super(LegacyJsonAdapter, self).request(*args, **kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/adapter.py", line 95, in request
+    return self.session.request(url, method, **kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/utils.py", line 337, in inner
+    return func(*args, **kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/session.py", line 390, in request
+    resp = send(**kwargs)
+  File "/vagrant/reg_service/venv/lib/python2.7/site-packages/keystoneclient/session.py", line 434, in _send_request
+    raise exceptions.ConnectionRefused(msg)
+ConnectFailure: Unable to establish connection to http://127.0.0.1:35357/v3/users/123
